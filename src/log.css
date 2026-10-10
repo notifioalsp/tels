@@ -1,0 +1,2070 @@
+.dashboard-container {
+	display: flex;
+	flex-direction: column;
+	height: 70px;
+	background-color: #FFFFFF;
+}
+
+.login-maonboarding-container {
+	width: 100%;
+}
+
+.header-section-wrapper {
+	margin: 0px;
+	color: #333;
+	font-family: "akkurat-light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 14px;
+	background-color: #FFFFFF;
+}
+
+.header-section-wrapper .header-navigation {
+	margin-left: 30px;
+}
+
+.header-section-wrapper > * {
+	flex: 1 100%;
+}
+
+article, aside, footer, header, nav, section {
+	display: block;
+}
+
+@media only screen and (min-width: 768px)
+	.header-section-wrapper .u-no-display-desktop {
+		display: none;
+	}
+
+	.header-section-wrapper .header-menu-container {
+		align-items: center;
+		height: 70px;
+		width: 100%;
+	}
+
+	.flexbox-row {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.header-section-wrapper .header-navigation-logo-line-height {
+		line-height: 0.9;
+		letter-spacing: -0.3px;
+		padding-top: 16px;
+	}
+
+	.flexbox-cell-grow {
+		flex-grow: 1;
+	}
+
+	.header-section-wrapper .header-navigation-logo-cell {
+		background: url(/myaccount/test/aem/assets/images/logo-blue.png) no-repeat scroll 0 7px transparent;
+		min-width: 24px;
+		padding: 10px 0px 10px 36px;
+	}
+
+	.header-section-wrapper a, .header-section-wrapper a:visited {
+		color: #000000;
+		text-decoration: none;
+	}
+
+	.header-section-wrapper .header-navigation-title-cell {
+		font-size: 19px;
+		font-family: "Conv_GraCoRg_", Calibri, sans-serif !important;
+		margin-left: 10px;
+		line-height:1.5rem;
+	}
+
+	.header-section-wrapper .header-navigation-logo-line-height {
+		line-height: 0.9;
+		letter-spacing: -0.3px;
+	}
+
+	.header-section-wrapper .profile-settings .dropdown-content {
+		min-width: 243px;
+		z-index: 99;
+	}
+
+	.header-section-wrapper .dropdown-content {
+		margin-top: 21px;
+		display: none;
+		position: absolute;
+		background-color: #ffffff;
+		box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+		z-index: 1;
+	}
+
+	.header-section-wrapper .dropdown-content a {
+		color: black;
+		padding: 12px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.header-section-wrapper .header-navigation-logo-cell:hover, .header-section-wrapper .header-navigation-logo-sub-title:hover, .header-section-wrapper .header-navigation-title-cell:hover {
+		background-color: transparent;
+	}
+
+	.header-section-wrapper .header-navigation-logo-sub-title {
+		margin-left: 46px;
+		font-size: 12px;
+		font-family: "Conv_GraCoRg_", Calibri, sans-serif !important;
+		line-height:1.5rem;
+	}
+
+	.header-section-wrapper .dropdown-content:hover .menu-link, .header-section-wrapper .profile-settings.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown-border-top {
+		background: #5E50BF;
+		width: 55%;
+		height: 3px;
+	}
+
+	.profile-settings > a{
+		padding: 10px 10px 30px 0px;
+	}
+
+	.profile-settings > a::after {
+		font-family: 'td-icons';
+		content: "\e6e3";
+		font-size: 14px;
+		padding-left: 5px;
+	}
+
+	.header-section-wrapper .dropdown-content a::after {
+		font-family: 'td-icons';
+		content: "\e6e2";
+		font-size: 14px;
+		float: right;
+		padding-left: 5px;
+	}
+
+	.header-section-wrapper .dropdown-content a:hover {
+		background:#f8f8f8;
+		text-decoration:underline;
+	}
+
+	.account-support > a{
+		padding: 10px 25px 26px 10px;
+		margin-right:5px;
+	}
+
+	.signin-top-border {
+		display: none;
+	}
+
+	.signin-top-border-logout {
+		display: none;
+	}
+
+	.username-label {
+		position: relative;
+		pointer-events: none;
+		right: 368px;
+		transition: 0.2s ease all;
+		font-size: 13px;
+		color: #6b6b6b;
+	}
+
+	.password-label {
+		position: relative;
+		pointer-events: none;
+		left: -368px;
+		top: 0px;
+		transition: 0.2s ease all;
+		font-size: 13px;
+		color: #6b6b6b;
+	}
+
+	.showpassword {
+		display: inherit;
+	}
+
+	.login.username {
+		font-size: 14px ;
+		width: 200px;
+		height: 35px;
+		margin-top: 25px;
+		width: 355px !important;
+		padding-left: 0px;
+		border-bottom-color: #6b6b6b;
+	}
+
+	.login.password {
+		font-size: 14px ;
+		width: 200px;
+		height: 35px;
+		margin-top: 8px;
+		width: 355px !important;
+		padding: 3px 5px !important;
+		border-bottom-color: #6b6b6b;
+	}
+
+	.password-visible .passwordrow {
+		display: inherit !important;
+	}
+
+	.username-visible .usernamerow {
+		display: none !important;
+	}
+
+	.rememberme-visible #rememberMeBox {
+		display: none !important
+	}
+
+	.form-row.embeded-label.usernamerow input[type="text"]:focus ~ .username-label,
+	.form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid ~ .username-label {
+		bottom: 25px;
+		right: 368px;
+		font-size: 11px;
+		opacity: 1;
+		color: #6b6b6b;
+	}
+
+	.form-row.embeded-label.usernamerow input[type="text"]:focus, .form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid,
+	.form-row.embeded-label.passwordrow input[type="password"]:focus, .form-row.embeded-label.passwordrow input[type="password"]:not(:focus):valid {
+		padding-left: 0px !important;
+		width: 360px !important;
+	}
+
+	.form-row.embeded-label.usernamerow .login.username, .form-row.embeded-label.passwordrow .login.password {
+		margin-left: 53px;
+		float: none;
+	}
+
+	.form-row.embeded-label.usernamerow  {
+		margin-left: 27px;
+	}
+
+	.form-row.embeded-label.passwordrow input[type="password"]:focus ~ .password-label,
+	.form-row.embeded-label.passwordrow input[type="password"]:not(:focus):valid ~ .password-label {
+		top: -24px;
+		font-size: 11px;
+		opacity: 1;
+		color: #6b6b6b;
+	}
+
+	.form-row input[type=text], .form-row input[type=password] {
+		border-bottom: 1px solid #6b6b6b;
+		border-left: none !important;
+		border-top: none !important;
+		border-right: none !important;
+	}
+
+	.form-row input[type=text]:focus, .form-row input[type=password]:focus {
+		border-bottom: 2px solid black !important;
+	}
+
+	.form-row input[type=text]:focus, .form-row input[type=password]:focus {
+		border-bottom-color: #5E50BF !important;
+	}
+
+	.header-search input[type=text] {
+		width: 100px;
+		box-sizing: border-box;
+		border: none;
+		font-size: 14px;
+		background: url("../images/search-icon.png") no-repeat scroll 130px -4px;
+		background-position: 10px 10px;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+	}
+
+	.header-search input[type=text]:focus {
+		width: 150px;
+		margin-right: 10px;
+	}
+
+	.header-search input[type=text]:focus, .header-search input[type=password]:focus {
+		border: none !important;
+		border-bottom: 1px solid #333 !important;
+	}
+
+	#container {
+		flex: 1 0 auto;
+	}
+
+	#container {
+		background-color: #f9f9f9;
+	}
+
+	div.section-wrapper {
+		max-width: 982px;
+		margin: auto;
+		color: #333;
+	}
+
+	.section-wrapper {
+		max-width: 982px;
+		margin: auto;
+		color: #333;
+		font-family: "akkurat-light","Helvetica Neue","Arial Narrow",Helvetica,Arial,sans-serif;
+	}
+
+	.fade-in {
+		animation-name: fade-in;
+	}
+
+	.animated {
+		animation-duration: 1s;
+	}
+
+	.section-wrapper {
+		max-width: 982px;
+		margin: auto;
+		color: #333;
+	}
+
+	.section-wrapper > * {
+		flex: 1 100%;
+	}
+
+	h2.prepaid-services_title {
+		margin-bottom: 45px;
+		margin-top: 7rem;
+	}
+
+	.section-header {
+		margin-top: 7rem;
+		font-size: 3.6rem;
+		font-weight: 100;
+		margin-bottom: 0;
+	}
+
+	body.unauthenticated, body {
+		background: white;
+	}
+
+	.flexbox-row {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.services-container {
+		margin-top: 45px;
+	}
+
+	.service-details-section {
+		margin-bottom: 2rem;
+		min-height: 210px;
+	}
+
+	.unauth-heading-my-account.gravur, .sub-unauth-heading-my-account.gravur {
+		display: none;
+	}
+
+	.page-container {
+		margin-top: 30px;
+		display: flex;
+		width: 100%;
+		flex-direction: row-reverse;
+	}
+
+	.account-services-footer.grid_18.alpha.omega{
+		background-color: white;
+		width: 982px;
+		border-radius: 4px;
+		margin-left: -20px;
+	}
+
+	.footer.container_18.cf {
+		padding-bottom: 0px;
+	}
+
+	#login_services #useful-links {
+		background: none;
+		margin-top: 35px;
+		padding-right: 10px;
+		margin-left: 90px;
+		padding-bottom: 38px
+	}
+
+	.advertisement.cf {
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-top: 29px;
+		padding-bottom: 0px;
+	}
+
+	.advertisement.cf .left, .advertisement.cf .centre {
+		margin-right: 12px;
+	}
+
+	.advertisement.cf li p {
+		padding-top: 15px;
+		font-size: 12px;
+		padding-left: 23px;
+		margin: 0px 37px auto;
+		line-height: 1.7;
+	}
+
+	.advertisement.cf li a {
+		border: none;
+		border-radius: 4px;
+		box-shadow: 0px 3px 7px #DDDDDD;
+	}
+
+	#register-telstra-id {
+		background: none;
+		padding: 17px;
+		border: 1px solid;
+		font-size: 13px;
+		margin: 0 0 0 40px;
+		text-decoration: none;
+		background-color: white !important;
+	}
+
+
+	#login-maonboarding-username-tooltip {
+		position: relative;
+		background-image : none;
+		font-size: 11px;
+		right: 60px;
+		text-indent: unset;
+		float: right;
+		width: 65px;
+		margin-left: 0px;
+		text-decoration: none;
+		color: #5E50BF;
+		bottom: 28px;
+	}
+
+	.form-row.embeded-label.usernamerow input[type="text"]:focus ~ #login-maonboarding-username-tooltip,
+	.form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid ~ #login-maonboarding-username-tooltip {
+		bottom: 54px;
+	}
+
+	#signin-left-pane {
+		width: 60%;
+		right: 22%;
+		float: unset;
+	}
+
+	#login-maonboarding-box {
+		clear:none;
+		float:left;
+		min-width:400px;
+		padding-left:56px;
+	}
+	.login-maonboarding-recover-reset {
+		width: auto;
+		text-align: center;
+		margin-left: 150px;
+	}
+
+	.facebook-heading-maonboarding {
+		margin: auto;
+		width: 75%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 130px;
+	}
+
+	#use-facebook-login::before, .facebook-maonboarding-btn::before {
+		font-family: 'td-icons';
+		content: '\e6cb';
+		font-size: 16px;
+		color: #0e385f;
+		padding-right: 5px;
+	}
+
+	#login-maonboarding-facebook {
+		width: 63%;
+		padding-bottom: 10px;
+		margin-left: 94px;
+		border-top: none;
+		padding-left: 14px;
+		padding-top: 0px;
+	}
+
+	.remove_underline.vertical-align.login-maonboarding {
+		margin: auto;
+	}
+
+	.remove_underline.vertical-align.login-maonboarding li:first-child {
+		margin-right: 7px;
+	}
+
+	.remove_underline.vertical-align.login-maonboarding li:first-child .recover-or-forgot, .recover-or-forgot-signin {
+		padding-left: 9px;
+		top: 0px;
+	}
+
+	.login-maonboarding-small-top-margin-grey-box {
+		margin-top: 50px;
+		padding-top: 25px !important;
+	}
+
+	.login-maonboarding.side_title_padding_left_and_right {
+		padding-bottom: 10px;
+		font-weight: 700;
+		font-size: 20px;
+		margin-left: 35px;
+		padding-left: 0px;
+		color: black;
+	}
+
+	.login-maonboarding-sub-heading {
+		padding-bottom: 20px;
+		font-size: 13px;
+		width: 65%;
+		margin-left: 35px;
+	}
+
+	.blue-arrow-maonboarding li {
+		display: inline;
+		padding-right: 8px;
+	}
+
+	#rememberMeBox {
+		margin-left: 80px;
+		margin-top: 15px;
+		width: 72%;
+	}
+
+	#rememberMeLbl {
+		float: unset;
+		font-size: 12px;
+		position: relative;
+		padding-left: 25px;
+		margin-bottom: 12px;
+		cursor: pointer;
+		font-size: 12px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.submit.submit_buttons.form-row {
+		margin-top: 25px;
+		margin-left: 80px;
+		margin-bottom: 30px;
+	}
+
+	.view-all .account-services-view-all-title {
+		color: #5E50BF !important;
+		background: none;
+		padding-left: 0px;
+		margin-top: 8px;
+		text-decoration: none !important;
+		font-size: 13px !important;
+	}
+
+	.view-all .account-services-view-all-title:after {
+		font-family: 'td-icons';
+		content: "\e6f4";
+		padding-left: 3px;
+	}
+
+	.view-all .account-services-view-all-title:hover{
+		opacity:0.8
+	}
+
+	#account-services-icons li a, .blue-arrow.remove_underline li a {
+		color: #5E50BF;
+	}
+
+	.blue-arrow.remove_underline li a:hover {
+		opacity:0.8;
+	}
+
+	.side-title-padding-left-and-right-maonboarding {
+		color: black;
+		padding-left: 33px;
+		font-size: 15px;
+		font-weight: bold;
+		margin-left: -41px;
+		margin-top: 50px;
+		font-family: Akkurat-Bold,Akkurat-Regular,Helvetica Neue,Helvetica,Arial,"sans-serif";
+		font-weight: 400;
+	}
+
+	#login-maonboarding-rememberme-tooltip {
+		float: right;
+		text-indent: unset;
+		width: 77px;
+		margin-top: auto;
+		font-size: 12px;
+		background-image : none;
+		font-size: 11px;
+		text-decoration: none;
+		position: relative;
+		right: -14px;
+		color: #5E50BF;
+	}
+
+	#login_services .cf .grid_13 {
+		width: 724px;
+		display: inline-flex;
+	}
+
+	#login-header-message {
+		font-size: 24px;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+		font-weight: 700;
+		font-family: arial;
+		width: 50%;
+		margin: auto;
+		padding-left:100px;
+	}
+
+	.page-container a:link, .page-container a:visited, .page-container a:hover {
+		font-size: 16px;
+	}
+
+	.page-container.grid_18.alpha.omega {
+		width: 100%;
+		border: none;
+		border-radius: 4px;
+		padding-top: 0px;
+	}
+
+	.data-usage::before {
+		font-family: 'td-icons';
+		content: '\e624';
+		font-size: 22px;
+		color: white;
+		padding-right: 10px;
+	}
+
+	.data-usage {
+		align-items: center;
+		display: flex;
+		font-size: 12px;
+	}
+
+	.pay-bills-details::before {
+		font-family: 'td-icons';
+		content: '\e613';
+		font-size: 22px;
+		color: white;
+		padding-right: 10px;
+	}
+
+	.pay-bills-details {
+		align-items: center;
+		display: flex;
+		font-size: 12px;
+	}
+
+	.prepaid-register::before {
+		font-family: 'td-icons';
+		content: '\e691';
+		font-size: 22px;
+		color: white;
+		padding-right: 10px;
+	}
+
+	.prepaid-register {
+		align-items: center;
+		display: flex;
+		font-size: 12px;
+	}
+
+	.paperless-bill::before {
+		font-family: 'td-icons';
+		content: '\e616';
+		font-size: 22px;
+		color: white;
+		padding-right: 10px;
+	}
+
+	.paperless-bill {
+		align-items: center;
+		display: flex;
+		font-size: 12px;
+	}
+
+	.star-icon::before {
+		font-family: 'td-icons';
+		content: '\e6ac';
+		font-size: 22px;
+		color: white;
+		padding-right: 10px;
+	}
+
+	.star-icon {
+		align-items: center;
+		display: flex;
+		font-size: 12px;
+	}
+
+	.login-maonboarding-small-top-margin-grey-box .icons-register.cf {
+		margin-bottom: 35px;
+		margin-left: 35px;
+		padding-left: 0px;
+	}
+
+	.login-maonboarding-small-top-margin-grey-box .btn-grey.register, .blue-arrow-maonboarding li a {
+		color: #5E50BF;
+	}
+
+	.blue-arrow-maonboarding.remove_underline {
+		margin-top: 10px;
+		padding-top: 30px;
+		margin-left: 40px;
+		padding-left: 0px;
+	}
+
+	.useful-items {
+		margin: -18px 103px;
+		white-space: nowrap;
+		display: flex;
+		margin-left: 72px;
+		margin-top: -29px;
+	}
+	.account-links-icons {
+		margin: 88px -201px 6px;
+	}
+
+	.blue-arrow-maonboarding.remove_underline li a {
+		font-size: 12px;
+		color: #5E50BF;
+	}
+
+	.blue-arrow-maonboarding.remove_underline li .pipe {
+		top: 0px;
+	}
+
+	#recover-username, #forgotten-pw, .facebook-maonboarding-btn {
+		color: #5E50BF;
+	}
+
+	.facebook-maonboarding-heading, .recover-or-forgot {
+		font-size: 13px;
+	}
+
+	.sign-in-telstra-business {
+		font-size: 13px;
+		margin: 0 -16% auto;
+	}
+
+	.sign-into-services {
+		font-size: 13px;
+	}
+
+	#telstra-search::before {
+		font-family: 'td-icons';
+		content: '\e6f2';
+		font-size: 14px;
+	}
+
+	.advertisement.cf li dl dt {
+		font-weight: bold;
+	}
+
+	.left.grid_6.alpha.l dl dt::before {
+		font-family: 'td-icons';
+		content: '\e62c';
+		font-size: 30px;
+		color: #5E50BF;
+	}
+
+	.centre.grid_6.c dl dt::before {
+		font-family: 'td-icons';
+		content: '\e65f';
+		font-size: 30px;
+		color: #5E50BF;
+	}
+
+	.right.grid_6.omega.r dl dt::before {
+		font-family: 'td-icons';
+		content: '\e689';
+		font-size: 30px;
+		color: #5E50BF;
+	}
+
+	.footer.base {
+		margin-top: 80px;
+		padding-bottom: 0px;
+	}
+
+	.footer .container_18 ul li {
+		margin-bottom: 20px;
+	}
+
+	#login_services #useful-links ul li a {
+		font-size: 12px;
+	}
+
+	#login_services .grid_13 #account-services-icons ul li a {
+		font-size: 12px;
+		text-decoration: none;
+	}
+
+	#login_services .grid_13 #account-services-icons ul li a:hover{
+		opacity:0.8;
+		text-decoration: underline;
+	}
+
+	#login_services .grid_13 #account-services-icons {
+		margin-top: 18px;
+	}
+
+	.nps_help_message_maonboarding{
+		margin-top: 0px;
+		padding-left: 300px !important;
+		padding-bottom: 0px;
+	}
+
+	.nps_help_message_maonboarding_second_line {
+		float: none !important;
+	}
+
+	@media only screen and (min-width: 767px) {
+		.page_content.white-box.grid_18{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-right: 0px;
+			margin-top: 60px;
+		}
+		.login-maonboarding-small-top-margin-grey-box {
+			margin-top: 0;
+			padding: 0;
+			display: none;
+		}
+	}
+	#login_services .grid_13 #account-services-icons ul li {
+		margin-right: 0px;
+	}
+
+	#login_services #useful-links .separator-no-padding ul li {
+		padding: 0px 5px 5px 20px;
+		display: inline;
+	}
+
+	#login_services #useful-links .separator-no-padding ul li:first-child {
+		margin-top: 5px;
+	}
+
+	.pay-a-bill-icon::before {
+		font-family: 'td-icons';
+		content: '\e613';
+		font-size: 35px;
+		color: darkgrey;
+	}
+
+	.nps_help_message_maonboarding{
+		margin-top: 0px;
+		padding-left: 50px !important;
+		padding-bottom: 0px;
+	}
+
+	.nps_help_message_maonboarding_second_line {
+		float: left;
+	}
+	.pay-a-bill-label:hover {
+		text-decoration: underline;
+	}
+
+	.request-email-bills-icon::before {
+		font-family: 'td-icons';
+		content: '\e615';
+		font-size: 35px;
+		color: darkgrey;
+	}
+
+	.pay-direct-debit-icon::before {
+		font-family: 'td-icons';
+		content: '\e631';
+		font-size: 35px;
+		color: darkgrey;
+	}
+
+	.prepaid-recharge-icon::before {
+		font-family: 'td-icons';
+		content: '\e697';
+		font-size: 35px;
+		color: darkgrey;
+	}
+
+	.activate-prepaid-icon::before {
+		font-family: 'td-icons';
+		content: '\e690';
+		font-size: 35px;
+		color: darkgrey;
+	}
+
+	.track-an-order-icon::before {
+		font-family: 'td-icons';
+		content: '\e6a3';
+		font-size: 35px;
+		color: darkgrey;
+	}
+
+	.moving-home-icon::before {
+		font-family: 'td-icons';
+		content: '\e64c';
+		font-size: 35px;
+		color: darkgrey;
+	}
+
+	.grid_13 .account-services {
+		width: 178px;
+		margin-top: 20px;
+		margin-left: 75px;
+		margin-right: 8px;
+	}
+
+	.grid_13 .account-services h3 {
+		font-weight: bold;
+	}
+
+	.grid_13 .account-services .no-login-required-maonboarding {
+		font-size: 13px;
+		padding-top: 10px;
+		padding-left:177px;
+		white-space:nowrap;
+	}
+
+	.account-services-view-all {
+		font-size: 12px;
+		text-decoration: none;
+	}
+
+	.get-telstra-app {
+		background: black;
+	}
+
+	#login-maonboarding-box .login-maonboarding-recover-reset a {
+		font-size: 13px;
+	}
+	.recover-or-forgot, .recover-or-forgot-signin {
+		font-size: 13px;
+	}
+
+	#business-enterprise  {
+		margin: 0px 150px auto;
+		width: 70%;
+	}
+
+	.facebook-maonboarding-btn, .remove_underline.vertical-align.login-maonboarding li a {
+		font-size: 13px;
+		color: #5E50BF;
+	}
+
+	.account-services-title {
+		font-size: 19px;
+		font-weight: bold;
+		padding-left: 185px;
+		white-space: nowrap;
+	}
+
+	.ask-the-forums::before {
+		font-family: 'td-icons';
+		content: '\e62c';
+		font-size: 33px;
+		color: #5E50BF;
+		padding-right: 10px;
+	}
+
+	.ask-the-forums, .contact-us-footer, .online-chat {
+		margin-top: 25px;
+		font-size: 19px;
+		padding-left: 20px;
+	}
+
+	.online-chat::before {
+		font-family: 'td-icons';
+		content: '\e65f';
+		font-size: 30px;
+		color: #5E50BF;
+		padding-right: 10px;
+	}
+
+	.contact-us-footer::before {
+		font-family: 'td-icons';
+		content: '\e689';
+		font-size: 30px;
+		color: #5E50BF;
+		padding-right: 10px;
+	}
+
+	/* Hide the browser's default checkbox */
+	#rememberMeLbl input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		display: none;
+	}
+
+	/* Create a custom checkbox */
+	.checkmark {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 15px;
+		width: 15px;
+		border-radius: 2px;
+		border: 1px solid grey;
+	}
+
+	/* When the checkbox is checked, add a purple background */
+	#rememberMeLbl input:checked ~ .checkmark {
+		background-color: #5E50BF;
+	}
+
+	/* Create the checkmark/indicator (hidden when not checked) */
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
+	}
+
+	/* Show the checkmark when checked */
+	#rememberMeLbl input:checked ~ .checkmark:after {
+		display: block;
+	}
+
+	/* Style the checkmark/indicator */
+	#rememberMeLbl .checkmark:after {
+		left: 4px;
+		top: 1px;
+		width: 3px;
+		height: 9px;
+		border: solid white;
+		border-width: 0 3px 3px 0;
+		-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	#login-maonboarding-box #error_box {
+		width: 71%;
+		margin-left: 75px !important;
+		margin-top: 20px;
+	}
+
+	.login.password.error_border {
+		border-bottom: 2px solid #c23d2a;
+	}
+
+	.login.password.error_border ~ .password-label {
+		color: #c23d2a;
+	}
+
+	.login.username.error_border {
+		border-bottom: 2px solid #c23d2a;
+	}
+
+	.login.username.error_border ~ .username-label {
+		color: #c23d2a;
+	}
+
+	#logout-message-maonboarding::before {
+		font-family: 'td-icons';
+		content: "\e906";
+		width: 58px;
+		height: 100%;
+		position: relative;
+		display: block;
+		text-align: center;
+		font-size: 50px;
+		font-style: normal;
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+		color:#009D38;
+		margin: 50px auto;
+	}
+	#logout-message-maonboarding{text-align: center;}
+	#logout-message-maonboarding .message{font-size:18px;margin-bottom:0;margin-top:-50px;font-weight: bolder;}
+	#logout-message-maonboarding .small.msg{font-size:1.2em;}
+	#logout-message-maonboarding .tooltip-click {margin-left: 0px}
+	#logout-message-maonboarding .tooltip-click > a:hover{text-decoration:underline;opacity:0.8;}
+	#logout-message-maonboarding strong,.tooltip-click-hover strong{font-weight:700}
+	#logout-message-maonboarding .tooltip-click > a {
+		color: #5E50BF;
+		text-decoration: none;
+		font-size: 1.2em;
+	}
+	.logout-message-maonboarding__center-wrapper {
+		margin: auto;
+		max-width: 500px;
+		text-align: center;
+	}
+	.logout-message-maonboarding__tooltip-wrapper {
+		position: relative;
+		left: -190px;
+		padding-top: 30px;
+	}
+	.logout-message-maonboarding__link-span {
+		white-space: nowrap;
+		font-size: 16px
+	}
+	.logout-message-maonboarding__tooltip-list {
+		margin-left: 20px;
+	}
+	.logout-message-maonboarding__tooltip-list-item {
+		list-style: disc;
+	}
+
+	.logout-panel-info{padding-bottom: 0px}
+	.logout-info-panel-content{padding-top: 20px}
+	.logout-info-panel, .logout-info-panel-thanks{font-size: 20px;width: 1350px;background-color: #E6EAF0; margin-left: -394px;height: 110px}
+	.tso-invitation-link-maonboarding {color:#5E50BF!important; line-height:50px;font-size:15px;!important}
+	.nps_survey_link::after{font-family: 'td-icons';content: "\e6e2";font-size: 14px;padding-left: 2px;color:#5E50BF}
+	.nps_help_message_maonboarding{padding-left: 520px !important}
+	.nps_survey_link{padding-left: 620px}
+	.nps_survey_link > a{
+		color: #5E50BF;
+		text-decoration: none;
+	}
+	.nps_thanks_message_maonboarding{margin-left: 942px}
+	.logout-info-panel-thanks-content{padding-top: 55px}
+	.nps-survey-close::before{content: '\2716'; cursor: pointer; float: right; margin-right: 20px;color: #5E50BF;font-size: 30px;}
+
+	.signin-top-border-logout {margin-top:50px;width: 100%;height: 3px;background: linear-gradient(to right, purple, skyblue);border-none;border-radius: 4px 4px 0px 0px;}
+
+	@media only screen and (max-width: 767px) {
+		#logout-message-maonboarding{padding-top:5px;padding-left:9px;width:100%;text-align: unset;}
+		#logout-message-maonboarding::before {
+			display: inline;
+			left:0px;
+			top: 19px
+		}
+		#logout-message-maonboarding .message{margin-left:66px; width: 74%;}
+		#logout-message-maonboarding .small.msg{margin-left:66px; margin-bottom:0px; width:80%}
+		.logout-message-maonboarding__tooltip-wrapper {
+			position: relative;
+			left: unset;
+			right: 70px;
+			padding-top: 30px;
+		}
+		.logout-message-maonboarding__center-wrapper {
+			text-align: left;
+		}
+		.tooltip-click{margin-left: 66px !important;}
+		.signin-top-border-logout{margin-top:0px;}
+		#signin-left-pane{right: 22px; padding-top: 24px}
+		.logout-info-panel{background-color: #E6EAF0; margin-left: -10px; margin-bottom: 0px;}
+		.logout-info-panel-thanks{margin-top:20px;padding-left:441px;margin-bottom:20px;}
+		.logout-info-panel-thanks-content{padding-top: 30px}
+		.logout-info-panel > span > b, .logout-info-panel-thanks > span > b  {display:block;}
+		.logout-info-panel-content{padding-top: 10px; padding-left: 12px}
+		.nps_help_message_maonboarding{padding-left: 68px !important}
+		.nps_help_message_maonboarding_second_line{float: left !important; margin-left: 20px}
+		.nps_survey_link{float: left; padding-left: 39px;}
+		#signin-left-pane .logout-panel-info {margin-top: 30px; width: 100% !important; padding-left: 10px !important;}
+		#loggingout-new.container{left:5% !important;right:5%;}
+		#loggingout-new .large-loading p {margin-left: 0px !important;}
+		.logging-out-container {text-align:center;}
+		.page-container.grid_18.alpha.omega {margin-bottom: 0px; !important}
+		#account-services-icons {padding-left: 0px;}
+		.login-maonboarding.side_title_padding_left_and_right {display:block; text-align: center; margin-left:0px; padding-right:0px;}
+		.login-maonboarding.side_title_padding_left_and_right{padding-bottom: 40px; padding-top: 40px;}
+		.login-maonboarding-small-top-margin-grey-box {display: none;}
+		.login-maonboarding-small-top-margin-grey-box-mobile {display: block;}
+		.facebook-heading-maonboarding{width: 80%;}
+		#business-enterprise{width: 100%; height: 70px; margin: 0px; padding-left: 0px; border-bottom: 0px;}
+		.login-maonboarding-small-top-margin-grey-box-mobile {border-top: 0.4px solid #E0E0E0; border-bottom: 0.4px solid #E0E0E0;}
+		.login-coming-soon{padding-left: 43px;padding-right: 43px;line-height: 1.7;background: #ffffff none repeat scroll 0 0;margin-left:0px !important;}
+		.login-coming-soon::before{display: block;text-align: center;}
+		.login-coming-soon #find-more-facebook-link{display: block;text-align: center;margin-top: 10px;}
+		#signin-left-pane .login-maonboarding-small-top-margin-grey-box-mobile{padding-bottom: 40px; margin-top: 0px;padding-top: 0px !important; display: block; width: 100%; margin-left: 0px;}
+		#login-maonboarding-facebook {margin-left:54px;width:80%;padding-bottom:5px;margin-top:25px;}
+		#business-enterprise ul li{margin-bottom:10px;float: none;}
+		#login-maonboarding-box {padding-left: 13px !important}
+		#login-header-message {
+			width: 65%;
+			margin-left: -30px;
+			font-size: 23px;
+			padding-top:10px
+		}
+		.blue-arrow-maonboarding.remove_underline {
+			text-align: center;
+		}
+		.login-maonboarding-small-top-margin-grey-box-mobile ul {
+			margin: 0px 60px auto !important;
+		}
+		.form-row.embeded-label.usernamerow .login.username, .form-row.embeded-label.passwordrow .login.password {
+			margin-left: 9px;
+			width: 72% !important;
+		}
+		.username-label, .password-label {
+			left: -254px;
+		}
+		#login-maonboarding-username-tooltip {
+			bottom: 29px;
+			right: 70px;
+		}
+		#login-maonboarding-rememberme-tooltip {
+			left: 0px;
+		}
+		.tooltip-click-hover {
+
+		}
+		.form-row.embeded-label.usernamerow input[type="text"]:focus ~ .username-label,
+		.form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid ~ .username-label {
+			top: -25px;
+		}
+		#maonboardingloginForm .submit.submit_buttons.form-row {
+			width: 60%;
+			margin-left: 34px;
+			margin-bottom: 0px;
+		}
+		.account-services-title {
+			margin-left: 115px;
+			font-size: 17px !important;
+			padding-bottom: 25px;
+			width: 80%;
+			border-bottom: 1px solid #e6e6e6;
+		}
+		#maonboardingloginForm .form-row.login.login-maonboarding-recover-reset {
+			border-top: 0px;
+			width: 78%;
+			border-bottom: 0px;
+		}
+		.remove_underline.vertical-align.login-maonboarding{padding-left: 0px}
+		.login-telstra-business{white-space: nowrap;}
+		.login-enterprise-government{white-space: nowrap}
+		.login-maonboarding ul{margin-left: 96px; margin-top: -5px}
+		.omniture-track login-enterprise-government{margin-right: 30px}
+		.sign-in-telstra-business {
+			margin: 0 35% auto;
+			white-space: nowrap;
+		}
+		.sign-in-items {
+			display: inline;
+		}
+		.facebook-heading-maonboarding {
+			padding-left: 15px;
+			padding-top: 0px;
+		}
+		.grid_11.left.alpha.omega.login-maonboarding {
+			padding-top: 0px;
+		}
+
+		.form-row.embeded-label.usernamerow input[type="text"]:focus ~ .username-label,
+		.form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid ~ .username-label {
+			top: -23px;
+			left: -254px;
+		}
+
+		#maonboardingloginForm #rememberMeBox {
+			margin-left: 34px;
+			width: 68%;
+		}
+
+		#login-maonboarding-box {
+			padding-bottom: 0px;
+			border-bottom: 0.4px solid #E0E0E0;
+		}
+
+		.login-maonboarding-small-top-margin-grey-box-mobile .login-maonboarding-side_title_padding_left_and_right.registeronline {
+			display: block;
+			margin-left: 0px;
+			text-align: center;
+			padding-bottom: 40px;
+		}
+
+		.login-maonboarding-small-top-margin-grey-box-mobile .btn-grey.register.black.login-maonboarding {
+			margin-bottom: 36px !important;
+
+		}
+
+		.login-maonboarding-small-top-margin-grey-box-mobile ul li .pipe {
+			display: inline;
+		}
+
+		.login-maonboarding-sub-heading {
+			display: none;
+		}
+
+		.account-services-footer.grid_18.alpha.omega {
+			box-shadow: none;
+			margin-left: 10px;
+			float: right;
+		}
+
+		.page-container.grid_18.alpha.omega {
+			box-shadow: none;
+		}
+
+		.account-services.mobile-collapsed, .side-title-padding-left-and-right-maonboarding.mobile-collapsed, .account-services.mobile-expanded, .side-title-padding-left-and-right-maonboarding.mobile-expanded {
+			background-color: transparent;
+			color: black !important;
+		}
+
+		.account-services.mobile-expanded {
+			padding-bottom: 0px;
+			left: -368px !important;
+		}
+
+		.account-services.mobile-collapsed .no-login-required-maonboarding {
+			display: none;
+		}
+
+		.account-services.mobile-expanded .no-login-required-maonboarding {
+			padding-left: 299px;
+		}
+
+		.account-services.mobile-expanded .account-services-title::after {
+			font-family: 'td-icons';
+			content: '\e6e4';
+			font-size: 18px;
+			float: right;
+		}
+
+		.account-services.mobile-collapsed .account-services-title::after {
+			font-family: 'td-icons';
+			content: '\e6e3';
+			font-size: 18px;
+			float: right;
+		}
+
+		.side-title-padding-left-and-right-maonboarding.mobile-collapsed:after {
+			font-family: 'td-icons';
+			content: '\e6e3';
+			font-size: 18px;
+			float: right;
+			right: 15px;
+			top: -9px;
+		}
+
+		.side-title-padding-left-and-right-maonboarding.mobile-expanded:after {
+			font-family: 'td-icons';
+			content: '\e6e4';
+			font-size: 18px;
+			float: right;
+			bottom: 7px;
+			top: -8px;
+			right: 20px;
+		}
+
+		.side-title-padding-left-and-right-maonboarding {
+			padding-left: 20px !important;
+			font-size: 17px !important;
+		}
+
+		.maonboarding-helpful-link {
+			padding-left: 28px;
+			width: 84%
+		}
+
+		.left.grid_6.alpha.l, .centre.grid_6.c, .right.grid_6.omega.r {
+			width: 100%;
+			border-radius: 0px;
+			margin-bottom: 0px;
+		}
+
+		.advertisement.cf li a {
+			border-radius: 0px;
+			box-shadow: none;
+			padding-bottom: 0px;
+		}
+
+		.advertisement.cf {
+			padding-top: 0px;
+		}
+
+		.right.grid_6.omega.r {
+			margin-top: 0px;
+		}
+
+		.pay-a-bill-icon, .request-email-bills-icon, .prepaid-recharge-icon, .activate-prepaid-icon, .track-an-order-icon, .moving-home-icon {
+			display: inline;
+			vertical-align: middle;
+		}
+
+		.account-services.mobile-expanded .no-login-required-maonboarding {
+			display: inline;
+		}
+
+		.account-services.mobile-expanded .view-all {
+			display: inline;
+			float: right;
+			margin-top: -40px !important;
+			margin-right: -70px !important;
+		}
+
+		.account-services.mobile-expanded ~ .icons-services {
+			margin-top: 0px !important;
+		}
+
+		.account-services.mobile-expanded ~ .icons-services .view-all {
+			display: none;
+		}
+
+		.remove_underline.vertical-align.login-maonboarding li{
+			height: 12px;
+		}
+
+		.profile-settings, .account-support {
+			display:none
+		}
+
+		.header-section-wrapper .header-navigation {
+			margin-left:20px
+		}
+
+		.footer.container_18.cf  {
+			padding-top: 0px;
+		}
+
+		.footer.base.grey {
+			margin-top: 0px;
+			padding-top: 0px;
+		}
+
+		.account-services.mobile-collapsed {
+			margin-bottom: 0px;
+			padding-bottom: 0px !important;
+			left: -361px !important;
+			padding-left: 0px !important;
+		}
+
+		.grid_4.separator {
+			margin-left: 20px !important;
+			width: 86% !important;
+			border-bottom: 1px solid #e6e6e6;
+			margin-top: 0px !important;
+		}
+
+		.icons-services.icons-background-white {
+			width: 85%;
+			margin-left: 6px;
+		}
+
+		.account-services-footer #login_services .border-grey {
+			border-bottom: 1px solid #e6e6e6;
+		}
+
+		.account-services-footer #login_services .border-none {
+			border-bottom: none;
+		}
+
+		#login_services .cf .grid_13 {
+			display: inline-grid;
+		}
+
+		#login-maonboarding-box #error_box {
+			margin-left: 30px !important;
+		}
+		.form-row.embeded-label.passwordrow {
+			margin-left: 26px;
+		}
+		#login_services ul li a span {
+			display: inline !important;
+		}
+		.form-row.embeded-label.usernamerow input[type="text"]:focus, .form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid,
+		.form-row.embeded-label.passwordrow input[type="password"]:focus, .form-row.embeded-label.passwordrow input[type="password"]:not(:focus):valid {
+			width: 247px !important;
+		}
+		.maonboarding-info-tab {
+			display: none;
+		}
+		.useful-links-pipe {
+			display: none !important;
+		}
+		.useful-items {
+			margin: -18px -15px !important;
+		}
+		#login_services #useful-links {
+			border-bottom: none !important;
+			padding-bottom: 0px;
+			margin-bottom: 55px;
+		}
+		.footer-copyright-maonboarding-content {
+			margin-left: 0px !important;
+		}
+		#register-telstra-id {
+			margin: 0 0 0 25px;
+			color: #5E50BF;
+			border: 1px solid #5E50BF;
+		}
+		.signin-top-border {
+			display: inherit !important;
+			width: 100%;
+			height: 3px;
+			background: linear-gradient(to right, purple, skyblue);
+			border: none;
+			border-radius: 4px 4px 0px 0px;
+		}
+
+		.signin-top-border-logout {
+			display: inherit !important;
+			width: 100%;
+			height: 3px;
+			background: linear-gradient(to right, purple, skyblue);
+			border: none;
+			border-radius: 4px 4px 0px 0px;
+		}
+
+		#useful-links ul li a {
+			margin-top: 5px;
+			padding-bottom: 10px;
+		}
+
+		.logout-info-panel {
+			height: 130px;
+		}
+
+		.header-search {
+			display: none;
+		}
+
+		.login-maonboarding-right-panel {
+			position: relative !important;
+			top: 0px !important;
+		}
+
+		#login_services .grid_13 #account-services-icons ul li a {
+			font-size: 16px;
+		}
+	}
+
+	@media screen
+	and (device-width: 320px)
+	and (device-height: 568px)
+	and (orientation: portrait) {
+		#login-header-message {
+			width: 81%;
+			font-size: 21px;
+			padding-left: 80px;
+		}
+		.form-row.embeded-label.usernamerow {
+			margin-left: 5px;
+			width: 85%;
+		}
+		.form-row.embeded-label.passwordrow {
+			margin-left: 5px;
+			width: 85%;
+		}
+		.username-label, .password-label {
+			left: -257px;
+		}
+		.tooltip-click{padding-left: 0px}
+		#signin-left-pane{right: 11px; float: left;}
+		#business-enterprise{margin-left: 7px !important}
+		#logout-message-maonboarding{padding-left: 4px}
+		#logout-message-maonboarding .small.msg{width: 77%}
+		#maonboardingloginForm #rememberMeBox {
+			margin-left: 14px;
+		}
+		#maonboardingloginForm .submit.submit_buttons.form-row {
+			margin-left: 15px;
+		}
+		#maonboardingloginForm .form-row.login.login-maonboarding-recover-reset {
+			width: 71%;
+		}
+		.facebook-heading-maonboarding {
+			margin: 0px;
+		}
+		.login-maonboarding-small-top-margin-grey-box-mobile ul {
+			margin: 0px 28px auto !important;
+		}
+		.account-services.mobile-collapsed .account-services-title::after {
+			margin-right: 15px;
+		}
+		.account-services.mobile-expanded .view-all {
+			margin-right: -88px
+		}
+		#login-maonboarding-facebook {
+			margin-left: 27px;
+			width: 90%;
+		}
+		.login-coming-soon {
+			padding-left: 22px;
+			padding-right: 22px;
+		}
+		.facebook-heading-maonboarding {
+			padding-left: 40px !important;
+		}
+		#login-maonboarding-box #error_box {
+			margin-left: 10px !important;
+		}
+		.logout-info-panel{margin-left: -10px}
+		.nps_survey_link{white-space: nowrap; float:none; padding-top:0px}
+		.logout-info-panel-thanks{padding-left: 448px}
+		.logout-info-panel-thanks-content{padding-top: 43px}
+	}
+
+	@media screen
+	and (device-width: 411px)
+	and (device-height: 823px)
+	and (orientation: portrait) {
+		.username-label, .password-label {
+			left: -279px;
+		}
+		#login-maonboarding-username-tooltip {
+			right: 77px;
+		}
+		#login-maonboarding-rememberme-tooltip {
+			left: 23px;
+		}
+		#maonboardingloginForm .submit.submit_buttons.form-row {
+			width: 66%;
+		}
+		#maonboardingloginForm .form-row.login.login-maonboarding-recover-reset {
+			width: 85%;
+		}
+		.facebook-heading-maonboarding {
+			width: 69%;
+		}
+		.blue-arrow-maonboarding{
+			margin-left: 85px !important;
+		}
+		.account-services-title {
+			width: 83%;
+		}
+		#useful-links {
+			width: 87% !important;
+		}
+
+		.sign-in-telstra-business {
+			margin: 0 39% auto;
+		}
+		.login-coming-soon {
+			padding-left: 61px;
+			padding-right: 61px;
+		}
+		.form-row.embeded-label.usernamerow input[type="text"]:focus ~ .username-label, .form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid ~ .username-label {
+			left: -279px;
+		}
+	}
+
+	@media screen
+	and (device-width: 411px)
+	and (device-height: 731px)
+	and (orientation: portrait) {
+		.username-label, .password-label {
+			left: -279px;
+		}
+		#login-maonboarding-username-tooltip {
+			right: 77px;
+		}
+		#login-maonboarding-rememberme-tooltip {
+			left: 22px;
+		}
+		#maonboardingloginForm .submit.submit_buttons.form-row {
+			width: 66%;
+		}
+		.facebook-heading-maonboarding {
+			width: 70%;
+		}
+		.account-services-title {
+			width: 83%;
+		}
+		#useful-links {
+			width: 87% !important;
+		}
+		#maonboardingloginForm .form-row.login.login-maonboarding-recover-reset {
+			width: 85%;
+		}
+		.sign-in-telstra-business {
+			margin: 0 39% auto;
+		}
+		.login-coming-soon {
+			padding-left: 61px;
+			padding-right: 61px;
+		}
+		.form-row.embeded-label.usernamerow input[type="text"]:focus ~ .username-label, .form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid ~ .username-label {
+			left: -279px;
+		}
+	}
+
+	@media screen
+	and (device-width: 414px)
+	and (device-height: 736px)
+	and (orientation: portrait) {
+		.username-label, .password-label {
+			left: -281px;
+		}
+		#login-maonboarding-username-tooltip {
+			right: 78px;
+		}
+		#login-maonboarding-rememberme-tooltip {
+			left: 25px;
+		}
+		#maonboardingloginForm .submit.submit_buttons.form-row {
+			width: 66%;
+		}
+		.facebook-heading-maonboarding {
+			width: 70%;
+		}
+		.account-services-title {
+			width: 83%;
+		}
+		#useful-links {
+			width: 88% !important;
+		}
+		.login-maonboarding-small-top-margin-grey-box-mobile ul {
+			margin-left: 90px;
+		}
+		#maonboardingloginForm .form-row.login.login-maonboarding-recover-reset {
+			width: 86%;
+		}
+		.login-coming-soon {
+			padding-left: 65px;
+			padding-right: 65px;
+		}
+		.form-row.embeded-label.usernamerow input[type="text"]:focus ~ .username-label, .form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid ~ .username-label {
+			left: -279px;
+		}
+	}
+
+	@media screen
+	and (device-width: 360px)
+	and (device-height: 640px)
+	and (orientation: portrait) {
+		#login-header-message {
+			width: 85%;
+			font-size: 22px;
+		}
+		.login-maonboarding-small-top-margin-grey-box-mobile ul {
+			margin: 0px 52px auto !important;
+		}
+		.form-row.embeded-label.usernamerow .login.username, .form-row.embeded-label.passwordrow .login.password {
+			width: 74% !important;
+		}
+		.form-row.embeded-label.usernamerow input[type="text"]:focus ~ .username-label,
+		.form-row.embeded-label.usernamerow input[type="text"]:not(:focus):valid ~ .username-label {
+			top: -25px;
+		}
+		#login-maonboarding-username-tooltip {
+			right: 58px;
+		}
+		#login-maonboarding-rememberme-tooltip {
+			left: -3px;
+		}
+
+		.password-label {
+			left: -252px;
+		}
+	}
+
+	#loggingout-new .large-loading #loading-spinner {float: left;margin: 25px 0 0 30px;}
+	#loggingout-new .large-loading {height: 70px;font-size:1.1em;position: relative;}
+	#loggingout-new .large-loading p {font-size: 14pt;margin-bottom: 0;margin-left: 45px;padding-top: 60px; font-weight:bold;}
+	#loggingout-new.container {position: absolute;left: 25%;top: 30%;}
+
+	.signin-top-border-logginout{width: 100%;height: 3px;background: linear-gradient(to right, purple, skyblue);border-none;border-radius: 4px 4px 0px 0px;}
+
+	.login-logo {
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.signin-error {
+		font-size: 14px;
+		color: #c23d2a;
+	}
+
+	.error-icon::before {
+		font-family: 'td-icons';
+		content: '\e714';
+		font-size: 19px;
+		color: #c23d2a;
+		padding-right: 5px;
+	}
+
+	.error-icon {
+		margin-top: -3px;
+	}
+
+	.icons li a span {
+		background: none;
+		height: 0px !important;
+	}
+
+	#login_services .grid_13 #account-services-icons .icons li a div {
+		display:inline-block;
+	}
+
+	#maonboardingloginForm #login-processing-maonboarding-btn {
+		padding: 10px 11px !important;
+		background: #001e82;
+		width: 345px;
+	}
+	#maonboardingloginForm #login-processing-maonboarding-btn:after {
+		display: none;
+	}
+
+	#maonboardingloginForm .fa.fa-circle-o-notch.fa-spin {
+		margin-right: 10px;
+		font-size: 15px !important;
+	}
+
+	#use-facebook-login {
+		font-size: 13px;
+		display: inherit;
+	}
+
+	#removing-this-soon {
+		margin-left: -35px;
+		font-size: 13px;
+	}
+
+	#find-more-facebook-link {
+		font-size: 13px;
+		text-decoration: none;
+		color: #5E50BF;
+	}
+
+	#find-more-facebook-link:after {
+		font-family: 'td-icons';
+		content: "\e6f4";
+	}
+
+	.login-maonboarding ul li .pipe {
+		top: 0px;
+	}
+
+	.login-coming-soon {
+		font-size: 16px;
+		margin-left: 15%;
+	}
+
+	.login-coming-soon::before {
+		font-family: 'td-icons';
+		content: '\e94d';
+		font-size: 40px;
+		padding-right: 10px;
+		vertical-align: middle;
+	}
+
+	#signin-facebook {
+		font-size: 13px;
+		color: #5E50BF;
+	}
+
+	.error-box-display-inline {
+		display: inline-flex;
+		margin: 0px;
+	}
+
+	.loginForm-margin-none {
+		margin-top: 0px;
+	}
+
+	.loginForm-margin-top {
+		margin-top: 12px;
+	}
+
+	.error-icon-display {
+		display: block;
+	}
+
+	.maonboarding-info-tab {
+		width: 105px;
+		border-top: 1px solid #5E50BF;
+		border-bottom: 1px solid #5E50BF;
+		border-left: 1px solid #5E50BF;
+		padding: 15px 20px 19px 15px;
+		color: #5E50BF !important;
+		font-size: 12px;
+		font-weight: 700;
+		margin-bottom: -40px;
+		height: 45px;
+		margin-left: -130px;
+	}
+
+	.maonboarding-info-tab:hover {
+		background: #4c479f;
+		color: #fff !important;
+		text-decoration: none !important;
+	}
+
+	.useful-links-pipe {
+		border-left: 1.5px #5E50BF solid;
+		margin-right: -13px;
+		margin-top: 10px;
+		height: 13px;
+	}
+}
+
+.footer-copyright-maonboarding-section {
+	color: grey;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 500;
+	width: 100%;
+	background: #F8F8F8 !important;
+	height:45px;
+}
+
+.footer-copyright-maonboarding-content {
+	display: inline-flex;
+	padding-top: 15px;
+	margin-left: 521px;
+	padding-left: 0px;
+}
+
+.footer-maonboarding-pipe {
+	display: inline;
+	width: 1px;
+	border-left: 1.5px #D3D3D3 solid;
+	margin-left: 9px;
+	margin-right: 9px;
+	margin-top: 3px;
+	height: 15px;
+}
+
+.footer-copyright-maonboarding-content li a {
+	text-decoration: none;
+	color: grey;
+	font-weight: 500;
+}
+
+.login-maonboarding-small-top-margin-grey-box.opened {
+	background: #5E50BF;
+	width: 380px;
+	height: 890px;
+	display: inline-block;
+	margin-left: 0px;
+}
+
+.login-maonboarding-small-top-margin-grey-box.opened p, .login-maonboarding-small-top-margin-grey-box.opened ul div, .login-maonboarding-small-top-margin-grey-box.opened ul li a {
+	color: white;
+}
+
+.login-maonboarding-small-top-margin-grey-box .nps-survey-close::before {
+	color: white;
+	margin-top: -13px;
+}
+
+.login-maonboarding-small-top-margin-grey-box .nps-survey-close a{
+	font-size: 12px;
+	float: right;
+	margin-right: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.login-maonboarding-small-top-margin-grey-box {
+	float: right;
+}
+
+.login-maonboarding-right-panel {
+	position: absolute;
+	top: 25%;
+}
+
+.unauthenticated .account-services .view-all {
+	margin: -29px 306px;
+}
+
+.unauthenticated .wrapper.slide-left {
+	display: inline-grid;
+	width: 75%;
+}
+
+.login-maonboarding-small-top-margin-grey-box-mobile {
+	display: none;
+}
+
+.login-maonboarding-container.slide-left {
+	width: 845px;
+}
+
+.page_content.white-box.grid_18.slide-left {
+	justify-content: flex-end;
+}
+.unauthenticated.slide-left {
+	display: flex;
+}
+
+.outage-information {
+	font-family: 'td-icons';
+	font-weight: normal;
+	padding-top: 2px;
+	font-size: 10px;
+}
+
+.outage-information:after {
+	font-size: 2.4rem;
+	color: #1964C8;
+	content: '\E956';
+	padding-left: 12px;
+	font-size: 25px;
+}
+
+#login-outage-message .info {
+	border: 1px solid #1964C8;
+	border-radius: 3px;
+	color: #1964C8;
+	background-color: #F0F8FF;
+	display: flex;
+}
+
+#login-outage-message .info span {
+	padding: 5px 8px 7px 10px;
+}
+
+.copyright-text{
+	color: grey;
+}
+.tooltip-click{margin-left: -205px}
+
+
+.persistentChatBtn {
+	padding: 12px 10px 6px 12px;
+}
+
+a#persistentChatBtnId {
+	border-top: none;
+	border-left: none;
+}
+
+.persistentChatLabel {
+	font-size: 18px;
+	margin-left: 42px;
+	margin-right: 5px;
+}
+
+.persistentChatIcon {
+	display: block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: url(/myaccount/static-content/images/live-chat-icon.jpg) no-repeat;
+	width: 32px;
+	height: 30px;
+	padding-left: 30px;
+	/* margin-top: 2px; */
+	background-size: 28px 26px;
+}
+
+.persistentChatBtnContainer {
+	max-width: 100% !important;
+}
+
+body {min-width: auto}
+
+#nps-popup_survey-link {
+	height: 30px;
+}
+
+.t-divider--lead {
+	margin-top: 0px !important;
+}
+
+.persistentChatContainer {
+	width: auto;
+	right: 0;
+}
+
+.hidden-frame {
+    visibility: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+	.fancybox-close {
+		background: url('/myaccount/static-content/js/jquery/fancybox/images/btn-close.png') no-repeat !important;
+	}
+
+	.fancybox-close:before {
+		content: none;
+	}
+
+	.persistentChatContainer {
+		transition: 2s;
+		left: 500px;
+	}
+}
